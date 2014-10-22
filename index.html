@@ -120,7 +120,56 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ATKScriptManager', 'aspnetFor
 //]]>
 </script>
 <script type="text/javascript" language="javascript">					
+Sys.Application.add_load(fixupModalPopups);
+function fixupModalPopups(sender, args) {
+	if (args.get_isPartialLoad()) return;
+	try 
+	{
+		var components = Sys.Application.getComponents();
+		for (i = 0; i < components.length; i++) {
+			var popUp = components[i];
+			if (AjaxControlToolkit.ModalPopupBehavior.isInstanceOfType(popUp)) {
 
+				popUp.add_hidden(HidePopupPanel);
+			}
+		}
+
+
+		try {
+			Telerik.Web.UI.Calendar.Popup.zIndex = 10000000;
+		}
+		catch (e2) {
+		}
+	}
+	catch (e) { 
+	}
+}
+
+function HidePopupPanel(source, args) {
+	
+	objPanel = document.getElementById(source._PopupControlID);
+
+	if (objPanel) {
+		
+		objPanel.style.display = 'none';
+	}
+}		
+				</script>   
+				<input type="hidden" name="ctl00$Master_VSKey" id="ctl00_Master_VSKey" />
+				<div class="mainSection">
+					<div id="ctl00_HeaderSection" class="headerSection">
+						<div id="ctl00_TopBannerSection" class="topBannerSection">
+
+
+
+
+<script src="//tags.extole.com/129974/core.js"></script>
+<style type="text/css">
+    <!--
+.megamenu {
+background: #979797;
+border: 1px solid #979797;
+}
 -->
 </style>
 <a id="top" name="top"></a>
