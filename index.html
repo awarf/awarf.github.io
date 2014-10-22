@@ -1,25 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC>
 <html>
-	<head><title>
-	Login
+<head><title>
+Login
 </title><meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-		<script type="text/javascript" language="javascript">
-		    var _preventFormSubmission = true;
-			//			
-		    $(function () { _preventFormSubmission = false; });
-		</script>   
-
-		
-
-	<link href="stylesheethandler.ashx?css=storefront%2flogin.css&amp;designid=85&amp;regionid=66&amp;retailerid=55&amp;partnerid=9998&amp;forceLoad=1.0.5406.11745" rel="stylesheet" type="text/css" />
-
-	<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
-	<script language="javascript" type="text/javascript">
-		var redirectTrigger = "";
-		var _emailLinkedToOAuth = false;
-		function MatchLoginCreateAccountDIVHeights() 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript">
+var _preventFormSubmission = true;
+$(function () { _preventFormSubmission = false; });
+</script>   
+<link href="stylesheethandler.ashx?css=storefront%2flogin.css&amp;designid=85&amp;regionid=66&amp;retailerid=55&amp;partnerid=9998&amp;forceLoad=1.0.5406.11745" rel="stylesheet" type="text/css" />
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/themes/smoothness/jquery-ui.css" rel="Stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+var redirectTrigger = "";
+var _emailLinkedToOAuth = false;
+function MatchLoginCreateAccountDIVHeights() 
 		{
 			setTimeout("RunMatchDIVHeights()", 100);
 		}
@@ -53,7 +48,6 @@
 		}
 
 	</script>
-<link href="Images/pagegraphics/9998/Yorkfavicon.ico" rel="shortcut icon" /><link href="Images/pagegraphics/9998/Yorkfavicon.ico" rel="icon" /><link href="/WebResource.axd?d=VBqtz1dSUWiBTxEPWJfXDW7oLVncpa6u98_9HpwZNGNFE1XcKcMf7rm-wZYoQhRzAkmvEd4ak8cX3kmicbnLTKoNiNcdZX7thF_D5S671fAtoB98q3ryJbDE7XW3sB7xQsp0GEwRVNWXF8yHaHgPYu5vCAHb6H9BIzePzi3qNkFQISgGtLAM1i1TCIGtvbct0&amp;t=634944574252300000" type="text/css" rel="stylesheet" /></head>
 	<body>
 		
 		<div class="bodycontainer">
@@ -141,7 +135,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ATKScriptManager', 'aspnetFor
 </script>
 
 				<script type="text/javascript" language="javascript">					
-//
+
 Sys.Application.add_load(fixupModalPopups);
 function fixupModalPopups(sender, args) {
 	if (args.get_isPartialLoad()) return;
@@ -151,29 +145,28 @@ function fixupModalPopups(sender, args) {
 		for (i = 0; i < components.length; i++) {
 			var popUp = components[i];
 			if (AjaxControlToolkit.ModalPopupBehavior.isInstanceOfType(popUp)) {
-				//Add the function below as the event
+
 				popUp.add_hidden(HidePopupPanel);
 			}
 		}
 
-		//
-		//
+
 		try {
 			Telerik.Web.UI.Calendar.Popup.zIndex = 10000000;
 		}
 		catch (e2) {
 		}
 	}
-	catch (e) { //
+	catch (e) { 
 	}
 }
 
 function HidePopupPanel(source, args) {
-	//
+	
 	objPanel = document.getElementById(source._PopupControlID);
-	//
+
 	if (objPanel) {
-		//
+		
 		objPanel.style.display = 'none';
 	}
 }		
@@ -196,11 +189,7 @@ border: 1px solid #979797;
 -->
 </style>
 <a id="top" name="top"></a>
-<!--
-  Below is a sample header inteded to show you how to use the replacable tags and conditional html formating.  When doing your design you'll want to put your css in your specific css files.  Since these files do not exist at this time, I've left the css inline.
-Once navigation has been determined, you'll need to update the  below.  XX needs to be replaced with the NavigationLinkSetID.
--->
-<!--[if IE 8]><link rel=StyleSheet href="images/PageGraphics/Default/ie8.css" type="text/css" media=screen><![endif]-->
+
 
 
 	<div id="ctl00_MainBodyContainer_LoginNewAccountPanel" class="loginNewAccountSection clearfix">
@@ -463,24 +452,24 @@ if (typeof(ValidatorOnLoad) == "function") {
 function ValidatorOnSubmit() {
     if (Page_ValidationActive) {
         return ValidatorCommonOnSubmit();
-    }
-    else {
-        return true;
-    }
 }
-        WebForm_AutoFocus('ctl00_MainBodyContainer_LoginEmail');
+else {
+return true;
+}
+}
+WebForm_AutoFocus('ctl00_MainBodyContainer_LoginEmail');
 document.getElementById('ctl00_MainBodyContainer_LoginEmailRFV').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_LoginEmailRFV'));
+Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_LoginEmailRFV'));
 }
 
 document.getElementById('ctl00_MainBodyContainer_LoginEmailREGEX').dispose = function() {
     Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_LoginEmailREGEX'));
 }
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_LoginEmailRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_LoginEmailRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_LoginEmailRFV"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_LoginEmailRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_LoginEmailRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_LoginEmailRFV"));
 });
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_LoginEmailRFVExtender2_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_LoginEmailRFVExtender2","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_LoginEmailREGEX"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_LoginEmailRFVExtender2_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_LoginEmailRFVExtender2","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_LoginEmailREGEX"));
 });
 
 document.getElementById('ctl00_MainBodyContainer_LoginPasswordRFV').dispose = function() {
@@ -501,94 +490,93 @@ document.getElementById('ctl00_MainBodyContainer_NewAccountLastNameRFV').dispose
     Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountLastNameRFV'));
 }
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountLastNameRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountLastNameRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountLastNameRFV"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountLastNameRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountLastNameRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountLastNameRFV"));
 });
 
 document.getElementById('ctl00_MainBodyContainer_NewAccountEmailRFV').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountEmailRFV'));
+Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountEmailRFV'));
 }
 
 document.getElementById('ctl00_MainBodyContainer_NewAccountEmailREGEX').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountEmailREGEX'));
+Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountEmailREGEX'));
 }
 Sys.Application.add_init(function() {
     $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountEmailRFV"));
 });
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender2_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender2","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountEmailREGEX"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender2_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountEmailRFVExtender2","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountEmailREGEX"));
 });
 
 document.getElementById('ctl00_MainBodyContainer_NewAccountPasswordRFV').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountPasswordRFV'));
+Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountPasswordRFV'));
 }
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountPasswordRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountPasswordRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountPasswordRFV"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountPasswordRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountPasswordRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountPasswordRFV"));
 });
 
 document.getElementById('ctl00_MainBodyContainer_NewAccountConfirmPasswordRFV').dispose = function() {
-    Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountConfirmPasswordRFV'));
+Array.remove(Page_Validators, document.getElementById('ctl00_MainBodyContainer_NewAccountConfirmPasswordRFV'));
 }
 Sys.Application.add_init(function() {
-    $create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountConfirmPasswordRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountConfirmPasswordRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountConfirmPasswordRFV"));
+$create(AjaxControlToolkit.ValidatorCalloutBehavior, {"ClientStateFieldID":"ctl00_MainBodyContainer_NewAccountConfirmPasswordRFVExtender_ClientState","closeImageUrl":"/WebResource.axd?d=GPAPiRpxCHqT1-fW65phlxFwfxzGwGaVL9ykp5Nl4-vfJHxPGSBNHTQ0E8mAreZCN0n6Ok_CTDyC7YmMfNaG3zm4rPfb8Lh2Q18cX5YqfgdH30KCc_Jsd4rX_H1bmrw2pBF9B9BQGWz7srDzEa8A4bn2quGSUIFRe-TTWexpc1M1&t=634944574252300000","highlightCssClass":"inlineErrorMessageSource","id":"ctl00_MainBodyContainer_NewAccountConfirmPasswordRFVExtender","warningIconImageUrl":"/WebResource.axd?d=-hH59GedXc0w1x8FUDVOqqPEBLAPycF25aSDZNG11H6ngXJ5ACS4i-Jz9wlwmNosMxTsf-UODXTCfVCT_WpTxCQnjb0QWqlFTQMPB3VQc65cmEzzkBlM7oTfOTwgR3JM3o49uKuqwbGE4dY3dlka5caOHmGofVM2oQRUvmlC0jc1&t=634944574252300000"}, null, null, $get("ctl00_MainBodyContainer_NewAccountConfirmPasswordRFV"));
 });
-//]]>
+]]>
 </script>
 </form>
-		 </div>
-		<script type="text/javascript">
+</div>
+<script type="text/javascript">
+ var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-32564012-1']);
+_gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-32564012-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  	
+})();
 
 </script>
 <script src="//tags.extole.com/129974/core.js"></script>
-<!-- Begin Extole Bootstrap Code -->
-<script src="https://media.extole.com/channel/bootstrap.min.js" init="media.extole.com/channel/extole.min.js" host="yorkphoto.extole.com" type="text/javascript"></script>
-<!-- End Extole Bootstrap Code -->
-<!-- Begin Extole Widget (ID: 1294099223) -->
-<script type="extole/widget">{
-    "name": "homepage",
-    "display": {
-        "type": "lightBox",
-"closeable": true,
-        "modal": true
-    },
-    "src": "/o/1294099223",
-    "autoLoad": true,
-"params": {
-        "f": "",
-        "l": "",
-        "email": ""
-    },
 
-    "id": "1294099223",
-    "type": "placement"
+<script src="https://media.extole.com/channel/bootstrap.min.js" init="media.extole.com/channel/extole.min.js" type="text/javascript"></script>
+
+<script type="extole/widget">{
+"name": "homepage",
+"display": {
+"type": "lightBox",
+"closeable": true,
+"modal": true
+},
+"src": "/o/1294099223",
+"autoLoad": true,
+"params": {
+"f": "",
+"l": "",
+"email": ""
+},
+
+"id": "1294099223",
+"type": "placement"
 }</script>
-<!-- End Extole Widget -->
+
 <script type="text/javascript">
 adroll_adv_id = "5OU3IH3VYBBAPB5VMUBWQN";
 adroll_pix_id = "54P4EH6T4ZGKDIDQE2QBLB";
 (function () {
 var oldonload = window.onload;
 window.onload = function(){
-   __adroll_loaded=true;
-   var scr = document.createElement("script");
-   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-   scr.setAttribute('async', 'true');
-   scr.type = "text/javascript";
+__adroll_loaded=true;
+var scr = document.createElement("script");
+var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+scr.setAttribute('async', 'true');
+scr.type = "text/javascript";
 
  
-   scr.src = host + "/j/roundtrip.js";
-   ((document.getElementsByTagName('head') || [null])[0] ||
-    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-   if(oldonload){oldonload()}};
+scr.src = host + "/j/roundtrip.js";
+((document.getElementsByTagName('head') || [null])[0] ||
+document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+if(oldonload){oldonload()}};
 }());
 
 </script>
