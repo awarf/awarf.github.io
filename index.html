@@ -18,13 +18,11 @@ function MatchLoginCreateAccountDIVHeights()
 		{
 			setTimeout("RunMatchDIVHeights()", 100);
 		}
-
 		function RunMatchDIVHeights() 
 		{
 			var divs = [];
 			divs[divs.length] = $get('login_Login');
 			divs[divs.length] = $get('login_NewAccount');
-
 			MatchDIVHeights(divs);
 		}
 		function ShowForgotPasswordLinkedAccountDialog () {
@@ -37,7 +35,6 @@ function MatchLoginCreateAccountDIVHeights()
 		function HideForgotPasswordLinkedAccountDialog() {
 			$(".forgotPasswordLinkedToOAuthDialog").dialog("close");
 		}
-
 		function ForgotPasswordAction()
 		{
 			if (_emailLinkedToOAuth) {
@@ -46,14 +43,10 @@ function MatchLoginCreateAccountDIVHeights()
 			}
 			return true;
 		}
-
 	</script>
 	<body>
-		
 		<div class="bodycontainer">
 			<form name="aspnetForm" method="post" action="login.aspx?return=true&amp;PK=e0e04a5e-5062-405d-aeb0-aa379be6bd58" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
-
-
 <script type="text/javascript">
 //<![CDATA[
 var theForm = document.forms['aspnetForm'];
@@ -69,11 +62,7 @@ function __doPostBack(eventTarget, eventArgument) {
 }
 //]]>
 </script>
-
-
 <script src="/WebResource.axd?d=QXAZ5gYuh47Jpx58Ut-9QZRYUyQNtQ_6H2jv7VBdSDnNmUxPFzpKcUCJW-ZeBtFPSw_MyusNqgoZzHUzcxG3_aWOb92OCJwfO1p8n9joXqo1&amp;t=635481750087789842" type="text/javascript"></script>
-
-
 <script type="text/javascript">
 //<![CDATA[
 var PageMethods = function() {
@@ -113,7 +102,6 @@ PageMethods.LogMessage= function(messageText,onSuccess,onFailed,userContext) {Pa
 PageMethods.GetCartSummary= function(onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetCartSummary(onSuccess,onFailed,userContext); }
 //]]>
 </script>
-
 <script src="/WebResource.axd?d=wnbsEiIyiqE_BB9hTM3nCn5cYVbFHYwsaxHqPJcpqPBhrNgLVlWCmXy8QqYEn-dvoQ3QKsAOTAjpxdi9Jbrlczxf46g63ozNwZQWalt6y1c1&amp;t=635481750087789842" type="text/javascript"></script>
 <script type="text/javascript">
 //<![CDATA[
@@ -123,9 +111,7 @@ return true;
 }
 //]]>
 </script>
-
 <div>
-
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
 </div>
 				<script type="text/javascript">
@@ -133,59 +119,8 @@ return true;
 Sys.WebForms.PageRequestManager._initialize('ctl00$ATKScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
 //]]>
 </script>
+<script type="text/javascript" language="javascript">					
 
-				<script type="text/javascript" language="javascript">					
-
-Sys.Application.add_load(fixupModalPopups);
-function fixupModalPopups(sender, args) {
-	if (args.get_isPartialLoad()) return;
-	try 
-	{
-		var components = Sys.Application.getComponents();
-		for (i = 0; i < components.length; i++) {
-			var popUp = components[i];
-			if (AjaxControlToolkit.ModalPopupBehavior.isInstanceOfType(popUp)) {
-
-				popUp.add_hidden(HidePopupPanel);
-			}
-		}
-
-
-		try {
-			Telerik.Web.UI.Calendar.Popup.zIndex = 10000000;
-		}
-		catch (e2) {
-		}
-	}
-	catch (e) { 
-	}
-}
-
-function HidePopupPanel(source, args) {
-	
-	objPanel = document.getElementById(source._PopupControlID);
-
-	if (objPanel) {
-		
-		objPanel.style.display = 'none';
-	}
-}		
-				</script>   
-				<input type="hidden" name="ctl00$Master_VSKey" id="ctl00_Master_VSKey" />
-				<div class="mainSection">
-					<div id="ctl00_HeaderSection" class="headerSection">
-						<div id="ctl00_TopBannerSection" class="topBannerSection">
-
-
-
-
-<script src="//tags.extole.com/129974/core.js"></script>
-<style type="text/css">
-    <!--
-.megamenu {
-background: #979797;
-border: 1px solid #979797;
-}
 -->
 </style>
 <a id="top" name="top"></a>
