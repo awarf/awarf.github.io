@@ -25,24 +25,8 @@ function MatchLoginCreateAccountDIVHeights()
 			divs[divs.length] = $get('login_NewAccount');
 			MatchDIVHeights(divs);
 		}
-		function ShowForgotPasswordLinkedAccountDialog () {
-			$(".forgotPasswordLinkedToOAuthDialog").dialog({
-				minWidth: 400,
-				resizable: false,
-				modal: true
-			});
-		}
-		function HideForgotPasswordLinkedAccountDialog() {
-			$(".forgotPasswordLinkedToOAuthDialog").dialog("close");
-		}
-		function ForgotPasswordAction()
-		{
-			if (_emailLinkedToOAuth) {
-				ShowForgotPasswordLinkedAccountDialog();
-				return false;
-			}
-			return true;
-		}
+		
+		
 	</script>
 	<body>
 		<div class="bodycontainer">
