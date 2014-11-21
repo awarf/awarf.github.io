@@ -33,7 +33,7 @@ input {
 		border-radius: 5px;
 		font: 14px/ 1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
 		margin: 0; 24. } 
-/*.account-info {
+.account-info {
     padding: 20px 20px 0 20px;
 	} 
 
@@ -53,7 +53,7 @@ input {
 		padding: 6px;
 		margin-top: 6px; 
 		width: 100%;
-				  } */
+				  } 
 .account-action {
 		background: #f0f0f2; 
 		border-top: 1px solid #c6c7cc; 
