@@ -53,12 +53,12 @@ input {
 		padding: 6px;
 		margin-top: 6px; 
 		width: 100%;
-				  } 
+				  } */
 .account-action {
 		background: #f0f0f2; 
 		border-top: 1px solid #c6c7cc; 
 		padding: 20px; 
-				}*/
+				}
 .account-action .btn {
 		background: -webkit-linear-gradient(# 49708f, #293f50);
 		background: -moz-linear-gradient(# 49708f, #293f50); 
@@ -69,7 +69,7 @@ input {
 		font-weight: bold; 
 		float: left; 
 		padding: 8px 16px; 
-				    }*/
+				    }
 .account-action label {
 		color: #7c7c80;
 		font-size: 12px; 
